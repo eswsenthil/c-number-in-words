@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3011C6412A9A24B000B011AA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3011C6402A9A24B000B011AA /* main.c */; };
+		30AA55BA2A9A4D4000D21844 /* PrintNumberInWords.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B42A9A4D4000D21844 /* PrintNumberInWords.c */; };
+		30AA55BB2A9A4D4000D21844 /* Console.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B62A9A4D4000D21844 /* Console.c */; };
+		30AA55BC2A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B82A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c */; };
+		30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B92A9A4D4000D21844 /* StringForNumbers.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		3011C63D2A9A24B000B011AA /* number-in-words */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "number-in-words"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3011C6402A9A24B000B011AA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		30AA55B22A9A4D4000D21844 /* PrintNumberInWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintNumberInWords.h; sourceTree = "<group>"; };
+		30AA55B32A9A4D4000D21844 /* StringForNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringForNumbers.h; sourceTree = "<group>"; };
+		30AA55B42A9A4D4000D21844 /* PrintNumberInWords.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PrintNumberInWords.c; sourceTree = "<group>"; };
+		30AA55B52A9A4D4000D21844 /* NumberAndThreeDigitsPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberAndThreeDigitsPosition.h; sourceTree = "<group>"; };
+		30AA55B62A9A4D4000D21844 /* Console.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Console.c; sourceTree = "<group>"; };
+		30AA55B72A9A4D4000D21844 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
+		30AA55B82A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NumberAndThreeDigitsPosition.c; sourceTree = "<group>"; };
+		30AA55B92A9A4D4000D21844 /* StringForNumbers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StringForNumbers.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,14 @@
 		3011C63F2A9A24B000B011AA /* number-in-words */ = {
 			isa = PBXGroup;
 			children = (
+				30AA55B62A9A4D4000D21844 /* Console.c */,
+				30AA55B72A9A4D4000D21844 /* Console.h */,
+				30AA55B82A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c */,
+				30AA55B52A9A4D4000D21844 /* NumberAndThreeDigitsPosition.h */,
+				30AA55B42A9A4D4000D21844 /* PrintNumberInWords.c */,
+				30AA55B22A9A4D4000D21844 /* PrintNumberInWords.h */,
+				30AA55B92A9A4D4000D21844 /* StringForNumbers.c */,
+				30AA55B32A9A4D4000D21844 /* StringForNumbers.h */,
 				3011C6402A9A24B000B011AA /* main.c */,
 			);
 			path = "number-in-words";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */,
+				30AA55BC2A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c in Sources */,
 				3011C6412A9A24B000B011AA /* main.c in Sources */,
+				30AA55BB2A9A4D4000D21844 /* Console.c in Sources */,
+				30AA55BA2A9A4D4000D21844 /* PrintNumberInWords.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
