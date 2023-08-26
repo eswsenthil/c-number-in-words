@@ -12,19 +12,20 @@
 #include "Console.h"
 
 
-void printNumberLessThan20(short number)
+int printNumberLessThan20(short number)
 {
     if (number < 0 || number > 19) {
-        return;
+        return -1;
     }
     const char *wordForNumber = stringForNumberLessThan20(number);
     writeToConsole(wordForNumber);
+    return 0;
 }
 
-void printNumberFrom20To99(short number)
+int printNumberFrom20To99(short number)
 {
     if ((number < 20) || (number > 99)) {
-        return;
+        return -1;
     }
     
     short numberOfTens = number / 10;
@@ -41,12 +42,13 @@ void printNumberFrom20To99(short number)
         writeToConsole(" ");
         printNumberLessThan20(singles);
     }
+    return 0;
 }
 
-void printNumberFrom100To999(short number)
+int printNumberFrom100To999(short number)
 {
     if (number < 100 || number > 999) {
-        return;
+        return -1;
     }
     
     short numberOfHundreds = number / 100;
@@ -58,7 +60,7 @@ void printNumberFrom100To999(short number)
     
     short last2Digits = number % 100;
     if (last2Digits == 0) {
-        return;
+        return 0;
     }
     else if (last2Digits < 20) {
         writeToConsole(" ");
@@ -68,22 +70,29 @@ void printNumberFrom100To999(short number)
         writeToConsole(" ");
         printNumberFrom20To99(last2Digits);
     }
+    return 0;
 }
 
-void printUnit(short threeDigitsPosition)
+int printWordForThreeDigitsPosition(short threeDigitsPosition)
 {
-    if (threeDigitsPosition != 0) {
-        writeToConsole(" ");
-        const char *wordForThreeDigitsPosition = stringForThreeDigitsPosition(threeDigitsPosition);
-        writeToConsole(wordForThreeDigitsPosition);
+    if (threeDigitsPosition == 0) {
+        return -1;
     }
+    writeToConsole(" ");
+    const char *wordForThreeDigitsPosition = stringForThreeDigitsPosition(threeDigitsPosition);
+    writeToConsole(wordForThreeDigitsPosition);
+    return 0;
 }
 
 
-void printNumberAndThreeDigitsPosition(struct NumberAndThreeDigitsPosition x)
+int printNumberAndThreeDigitsPosition(int prefixSpace, struct NumberAndThreeDigitsPosition x)
 {
     if (x.number == 0) {
-        return;
+        return -1;
+    }
+    
+    if (prefixSpace == 1) {
+        writeToConsole(" ");
     }
     
     if (x.number < 20) {
@@ -96,18 +105,17 @@ void printNumberAndThreeDigitsPosition(struct NumberAndThreeDigitsPosition x)
         printNumberFrom100To999(x.number);
     }
     
-    if (x.threeDigitsPosition != 0) {
-        writeToConsole(" ");
-        const char *wordForThreeDigitsPosition = stringForThreeDigitsPosition(x.threeDigitsPosition);
-        writeToConsole(wordForThreeDigitsPosition);
-    }
+    printWordForThreeDigitsPosition(x.threeDigitsPosition);
+    return 0;
 }
 
 void printNumberInWordsFromStack(void)
 {
+    int prefixSpace = 0;
     while (0 == isNumberAndThreeDigitsPositionStackEmpty()) {
         struct NumberAndThreeDigitsPosition x = frontOfNumberAndThreeDigitsPositionStack();
-        printNumberAndThreeDigitsPosition(x);
+        printNumberAndThreeDigitsPosition(prefixSpace, x);
+        prefixSpace = 1;
         popFromNumberAndThreeDigitsPositionStack();
     }
     writeToConsole("\n");

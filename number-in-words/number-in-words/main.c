@@ -18,5 +18,10 @@ int main(int argc, const char * argv[]) {
     printNumberInWords(100);
     printNumberInWords(999);
     printNumberInWords(1000);
+    printNumberInWords(1001);
+    printNumberInWords(10001);
+    printNumberInWords(100001);
+    printNumberInWords(1000001);
+    
     return 0;
 }
