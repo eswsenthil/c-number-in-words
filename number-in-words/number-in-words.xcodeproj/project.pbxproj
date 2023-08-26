@@ -14,6 +14,8 @@
 		30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B92A9A4D4000D21844 /* StringForNumbers.c */; };
 		30AA55C02A9A5C3D00D21844 /* StringToNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */; };
 		30AA55C32A9A5CB000D21844 /* VerifyNumberInWords.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */; };
+		30AA55C62A9A628D00D21844 /* Dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55C52A9A628D00D21844 /* Dictionary.c */; };
+		30AA55C92A9AA08C00D21844 /* DictionaryFileParser.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55C82A9AA08C00D21844 /* DictionaryFileParser.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StringToNumber.c; sourceTree = "<group>"; };
 		30AA55C12A9A5CB000D21844 /* VerifyNumberInWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyNumberInWords.h; sourceTree = "<group>"; };
 		30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VerifyNumberInWords.c; sourceTree = "<group>"; };
+		30AA55C42A9A628D00D21844 /* Dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		30AA55C52A9A628D00D21844 /* Dictionary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Dictionary.c; sourceTree = "<group>"; };
+		30AA55C72A9AA08C00D21844 /* DictionaryFileParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryFileParser.h; sourceTree = "<group>"; };
+		30AA55C82A9AA08C00D21844 /* DictionaryFileParser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DictionaryFileParser.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */,
 				30AA55C12A9A5CB000D21844 /* VerifyNumberInWords.h */,
 				30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */,
+				30AA55C42A9A628D00D21844 /* Dictionary.h */,
+				30AA55C52A9A628D00D21844 /* Dictionary.c */,
+				30AA55C72A9AA08C00D21844 /* DictionaryFileParser.h */,
+				30AA55C82A9AA08C00D21844 /* DictionaryFileParser.c */,
 			);
 			path = "number-in-words";
 			sourceTree = "<group>";
@@ -152,10 +162,12 @@
 				30AA55C02A9A5C3D00D21844 /* StringToNumber.c in Sources */,
 				30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */,
 				30AA55BC2A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c in Sources */,
+				30AA55C62A9A628D00D21844 /* Dictionary.c in Sources */,
 				3011C6412A9A24B000B011AA /* main.c in Sources */,
 				30AA55C32A9A5CB000D21844 /* VerifyNumberInWords.c in Sources */,
 				30AA55BB2A9A4D4000D21844 /* Console.c in Sources */,
 				30AA55BA2A9A4D4000D21844 /* PrintNumberInWords.c in Sources */,
+				30AA55C92A9AA08C00D21844 /* DictionaryFileParser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
