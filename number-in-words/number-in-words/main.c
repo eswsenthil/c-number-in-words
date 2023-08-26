@@ -5,45 +5,37 @@
 //  Created by Tester on 26.8.2023.
 //
 
+#include "Console.h"
 #include "PrintNumberInWords.h"
+#include "StringToNumber.h"
+#include "VerifyNumberInWords.h"
+
+#include <errno.h>
+
+void printNumericStringInWords(const char *numericString)
+{
+    unsigned long long number;
+    int retCode = numberForString(numericString, &number);
+    if (retCode != 0) {
+        writeToConsole("Error\n");
+        return;
+    }
+    printNumberInWords(number);
+}
 
 int main(int argc, const char * argv[]) {
     
-    printNumberInWords(0);
-    printNumberInWords(1);
-    printNumberInWords(10);
-    printNumberInWords(19);
-    printNumberInWords(20);
-    printNumberInWords(99);
-    printNumberInWords(100);
-    printNumberInWords(999);
-    printNumberInWords(1000);
-    printNumberInWords(1001);
-    printNumberInWords(10001);
-    printNumberInWords(100001);
-    printNumberInWords(1000001);
-    printNumberInWords(10000001);
-    printNumberInWords(100000001);
-    printNumberInWords(1000000001);
-    printNumberInWords(10000000001);
-    printNumberInWords(100000000001);
-    printNumberInWords(1000000000001);
-    printNumberInWords(10000000000001);
-    printNumberInWords(100000000000001);
-    printNumberInWords(1000000000000001);
+#ifdef VERIFY_NUMBER_IN_WORDS
+    verifyNumberInWords();
+    return 0;
+#endif
     
-    printNumberInWords(100000000000011);
-    printNumberInWords(100000000000100);
-    
-    printNumberInWords(100000000001000);
-    printNumberInWords(100000000990000);
-    printNumberInWords(100000000990001);
-    
-    printNumberInWords(100000001000001);
-    printNumberInWords(100000999000001);
-    
-    printNumberInWords(100999000100001);
-    printNumberInWords(100999043100001);
-    
+    if (argc == 2) {
+        printNumericStringInWords(argv[1]);
+    }
+    else {
+        writeToConsole("Error\n");
+        return EINVAL;
+    }
     return 0;
 }

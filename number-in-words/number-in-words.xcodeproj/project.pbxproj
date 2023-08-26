@@ -12,6 +12,8 @@
 		30AA55BB2A9A4D4000D21844 /* Console.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B62A9A4D4000D21844 /* Console.c */; };
 		30AA55BC2A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B82A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c */; };
 		30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55B92A9A4D4000D21844 /* StringForNumbers.c */; };
+		30AA55C02A9A5C3D00D21844 /* StringToNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */; };
+		30AA55C32A9A5CB000D21844 /* VerifyNumberInWords.c in Sources */ = {isa = PBXBuildFile; fileRef = 30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		30AA55B72A9A4D4000D21844 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
 		30AA55B82A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NumberAndThreeDigitsPosition.c; sourceTree = "<group>"; };
 		30AA55B92A9A4D4000D21844 /* StringForNumbers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StringForNumbers.c; sourceTree = "<group>"; };
+		30AA55BE2A9A5C3D00D21844 /* StringToNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringToNumber.h; sourceTree = "<group>"; };
+		30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StringToNumber.c; sourceTree = "<group>"; };
+		30AA55C12A9A5CB000D21844 /* VerifyNumberInWords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyNumberInWords.h; sourceTree = "<group>"; };
+		30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VerifyNumberInWords.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 				30AA55B92A9A4D4000D21844 /* StringForNumbers.c */,
 				30AA55B32A9A4D4000D21844 /* StringForNumbers.h */,
 				3011C6402A9A24B000B011AA /* main.c */,
+				30AA55BE2A9A5C3D00D21844 /* StringToNumber.h */,
+				30AA55BF2A9A5C3D00D21844 /* StringToNumber.c */,
+				30AA55C12A9A5CB000D21844 /* VerifyNumberInWords.h */,
+				30AA55C22A9A5CB000D21844 /* VerifyNumberInWords.c */,
 			);
 			path = "number-in-words";
 			sourceTree = "<group>";
@@ -139,9 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AA55C02A9A5C3D00D21844 /* StringToNumber.c in Sources */,
 				30AA55BD2A9A4D4000D21844 /* StringForNumbers.c in Sources */,
 				30AA55BC2A9A4D4000D21844 /* NumberAndThreeDigitsPosition.c in Sources */,
 				3011C6412A9A24B000B011AA /* main.c in Sources */,
+				30AA55C32A9A5CB000D21844 /* VerifyNumberInWords.c in Sources */,
 				30AA55BB2A9A4D4000D21844 /* Console.c in Sources */,
 				30AA55BA2A9A4D4000D21844 /* PrintNumberInWords.c in Sources */,
 			);
