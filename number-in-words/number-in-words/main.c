@@ -22,6 +22,28 @@ int main(int argc, const char * argv[]) {
     printNumberInWords(10001);
     printNumberInWords(100001);
     printNumberInWords(1000001);
+    printNumberInWords(10000001);
+    printNumberInWords(100000001);
+    printNumberInWords(1000000001);
+    printNumberInWords(10000000001);
+    printNumberInWords(100000000001);
+    printNumberInWords(1000000000001);
+    printNumberInWords(10000000000001);
+    printNumberInWords(100000000000001);
+    printNumberInWords(1000000000000001);
+    
+    printNumberInWords(100000000000011);
+    printNumberInWords(100000000000100);
+    
+    printNumberInWords(100000000001000);
+    printNumberInWords(100000000990000);
+    printNumberInWords(100000000990001);
+    
+    printNumberInWords(100000001000001);
+    printNumberInWords(100000999000001);
+    
+    printNumberInWords(100999000100001);
+    printNumberInWords(100999043100001);
     
     return 0;
 }
