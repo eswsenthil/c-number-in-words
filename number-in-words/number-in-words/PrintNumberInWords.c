@@ -57,10 +57,15 @@ void printNumberFrom100To999(short number)
     writeToConsole(wordForHundred);
     
     short last2Digits = number % 100;
-    if (last2Digits < 20) {
+    if (last2Digits == 0) {
+        return;
+    }
+    else if (last2Digits < 20) {
+        writeToConsole(" ");
         printNumberLessThan20(last2Digits);
     }
     else {
+        writeToConsole(" ");
         printNumberFrom20To99(last2Digits);
     }
 }
